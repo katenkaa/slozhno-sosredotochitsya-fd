@@ -92,10 +92,6 @@
   border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-.header__theme-menu-button:focus {
-  border: none;
-  outline: none;
-}
 
 .header__theme-menu-button:focus {
   border-bottom: 1px solid var(--accent-color);
@@ -141,11 +137,6 @@
 
 .link:hover {
   text-decoration: underline;
-}
-
-.link:focus {
-  border: none;
-  outline: none;
 }
 
 .link:focus {
