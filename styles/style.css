@@ -71,7 +71,7 @@
   display: grid;
   justify-self: end;
   gap: 10px;
-  margin-top: 75px;
+  margin-top: 75px; 
 }
 
 .header__theme-menu-button {
@@ -252,7 +252,7 @@
   .header__theme-menu-list {
     margin-top: 192px;
   }
-  
+
   .header {
     gap: 162px;
   }
