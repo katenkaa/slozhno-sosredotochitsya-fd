@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  padding: 0 10px;
+  padding: 0 var(--page-padding);
   background-color: var(--bg-color);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--bg-image);
@@ -93,7 +93,7 @@
 }
 
 .header__theme-menu-button:focus {
-  border:none;
+  border: none;
   outline: none;
 }
 
@@ -148,11 +148,11 @@
 }
 
 .link:focus {
-  outline:none;
-  border:none;
+  border: none;
+  outline: none;
 }
 
-.link:focus{
+.link:focus {
   border: 1px solid var(--main-text-color);
 }
 
@@ -182,7 +182,7 @@
   background-color: var(--accent-color);
 }
 
-.margin-top {
+.content__section-list-title + .content__section-list-title {
   margin-top: 19px;
 }
 
@@ -223,10 +223,9 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-
 .header__theme-menu-button_active {
-  pointer-events: none;
   border: 1px solid inherit;
+  pointer-events: none;
 }
 
 @media (width >= 768px) {
@@ -234,7 +233,9 @@
     --main-margin-bottom: 60px;
     --content-gap: 60px;
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --page-padding: 20px;
   }
+
   .decorated-zone::before {
     top: 20px;
   }
@@ -244,18 +245,18 @@
   }
 
   .header__decor {
-    top: 20px;
-    right: 8px;
+    top: 19px;
+    right: 10px;
   }
+
   .header__theme-menu-list {
     margin-top: 192px;
   }
+  
   .header {
     gap: 162px;
   }
-  .page {
-    padding: 0 20px;
-  }
+
   .header__description {
     max-inline-size: 364px;
   }
@@ -312,15 +313,18 @@
     grid-row-start: 1;
     grid-row-end: 3;
   }
+
   .gallery > *:nth-child(3) {
     grid-column: 1;
     grid-row-start: 2;
     grid-row-end: 4;
   }
+
   .gallery > *:nth-child(4) {
     grid-column: 2;
     grid-row: 2;
   }
+
   .gallery > *:nth-child(5) {
     grid-row: 3;
     grid-column-start: 2;
@@ -338,9 +342,11 @@
   .header {
     gap: 114px;
   }
+
   .header__description {
     max-inline-size: 491px;
   }
+
   .content__section-title {
     max-inline-size: 315px;
   }

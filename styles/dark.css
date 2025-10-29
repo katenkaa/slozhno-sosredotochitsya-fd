@@ -16,7 +16,6 @@
   border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-
 :root.theme-dark .decorated-zone::after,
 :root.theme-dark .decorated-zone::before,
 :root.theme-dark .header__theme-menu-button,
