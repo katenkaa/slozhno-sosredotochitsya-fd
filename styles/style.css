@@ -71,7 +71,7 @@
   display: grid;
   justify-self: end;
   gap: 10px;
-  margin-top: 75px; 
+  margin-top: 75px;
 }
 
 .header__theme-menu-button {
@@ -99,10 +99,6 @@
 
 .header__theme-menu-button:focus {
   border-bottom: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
 }
 
 .header__title {
